@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#9e2d87</color>
+    <color name="colorPrimaryDark">#660e69</color>
+    <color name="colorAccent">#20acd7</color>
+
+    <item name="lightred" type="color">#bed23f3a</item>
+    <item name="orange" type="color">#beda7633</item>
+    <item name="lightgreen" type="color">#beb6d943</item>
+    <item name="green" type="color">#be66ca48</item>
+    <item name="darkgreen" type="color">#bf36a959</item>
+    <item name="lightcyan" type="color">#be41dcbd</item>
+    <item name="cyan" type="color">#be39c3e2</item>
+    <item name="blue" type="color">#be206bcc</item>
+    <item name="darkblue" type="color">#be334aaf</item>
+    <item name="purple" type="color">#bf6653ce</item>
+    <item name="darkmagenta" type="color">#be9751d4</item>
+    <item name="magenta" type="color">#beb147af</item>
+    <item name="strongmagenta" type="color">#bed736d7</item>
+    <item name="pink" type="color">#bde63aa4</item>
+    <item name="redpink" type="color">#bfe93061</item>
+    <item name="red" type="color">#bec7244c</item>
+    <item name="darkred" type="color">#bec91a31</item>
+    <item name="winered" type="color">#bea30c14</item>
+    <color name="shadowColor">#333232</color>
+
+    <integer-array name="displayColors">
+        <item>@color/lightred</item>
+        <item>@color/orange</item>
+        <item>@color/lightgreen</item>
+        <item>@color/green</item>
+        <item>@color/darkgreen</item>
+        <item>@color/lightcyan</item>
+        <item>@color/cyan</item>
+        <item>@color/blue</item>
+        <item>@color/darkblue</item>
+        <item>@color/purple</item>
+        <item>@color/darkmagenta</item>
+        <item>@color/magenta</item>
+        <item>@color/strongmagenta</item>
+        <item>@color/pink</item>
+        <item>@color/redpink</item>
+        <item>@color/red</item>
+        <item>@color/darkred</item>
+        <item>@color/winered</item>
+    </integer-array>
+</resources>

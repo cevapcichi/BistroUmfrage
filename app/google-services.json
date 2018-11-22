@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "656735759527",
+    "firebase_url": "https://bistroumfrage.firebaseio.com",
+    "project_id": "bistroumfrage",
+    "storage_bucket": "bistroumfrage.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:656735759527:android:de226eb62cb41d3f",
+        "android_client_info": {
+          "package_name": "de.munich.iteratec.bistroumfrage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "656735759527-rjf6a28kmsj16kc8jpnh5tjcdvtubi15.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "de.munich.iteratec.bistroumfrage",
+            "certificate_hash": "093b09cefb3fea53313d79024c81745d2d94b736"
+          }
+        },
+        {
+          "client_id": "656735759527-7t5vgt8cflhumsurh8lif1na3h63n8k5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4n__rjeU0m1EQCjEpTxlS12qtOn7QFRU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "656735759527-7t5vgt8cflhumsurh8lif1na3h63n8k5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

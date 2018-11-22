@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/displayQuestion"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DisplayQuestion">
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|bottom"
+        android:paddingBottom="50dp"
+        android:textSize="65sp"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/balootamma_regular"
+        android:shadowColor="@color/shadowColor"
+        android:shadowRadius="5"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:paddingHorizontal="24dp"
+        tools:text="Frage"
+        tools:textColor="@android:color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/answer1"
+                style="@style/DisplayAnswerStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Antwort 1"/>
+
+            <TextView
+                android:id="@+id/answer2"
+                style="@style/DisplayAnswerStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/answer1"
+                tools:text="Antwort 2"/>
+
+            <TextView
+                android:id="@+id/answer3"
+                style="@style/DisplayAnswerStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/answer2"
+                tools:text="Antwort 3"/>
+
+            <TextView
+                android:id="@+id/answer4"
+                style="@style/DisplayAnswerStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/answer3"
+                tools:text="Antwort 4"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>
