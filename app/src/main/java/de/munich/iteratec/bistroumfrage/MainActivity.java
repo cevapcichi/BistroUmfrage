@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 
@@ -15,13 +16,10 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
 
     public static ArrayList<Question> questionList = new ArrayList<>();
-    private EditText questionEdit;
-    private EditText a1Edit;
-    private EditText a2Edit;
-    private EditText a3Edit;
-    private EditText a4Edit;
+    private EditText questionEdit, a1Edit, a2Edit, a3Edit, a4Edit;
     private FloatingActionButton addBtn;
     private ListView listView;
+    private Button toQuestionBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         a3Edit = (EditText) findViewById(R.id.editA3);
         a4Edit = (EditText) findViewById(R.id.editA4);
         addBtn = (FloatingActionButton) findViewById(R.id.addFLoatingBtn);
+        toQuestionBtn = (Button) findViewById(R.id.toQuestion);
 
 
         //test question
@@ -50,9 +49,13 @@ public class MainActivity extends AppCompatActivity {
         addBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                questionList.add(new Question(questionEdit.getText().toString(), a1Edit.getText().toString(), a2Edit.getText().toString(), a3Edit.getText().toString(), a4Edit.getText().toString()));
-                clearEditText();
-                adapter.notifyDataSetChanged();
+//                questionList.add(new Question(questionEdit.getText().toString(), a1Edit.getText().toString(), a2Edit.getText().toString(), a3Edit.getText().toString(), a4Edit.getText().toString()));
+//                clearEditText();
+//                adapter.notifyDataSetChanged();
+
+                Intent i = new Intent(MainActivity.this, DiagramActivity.class);
+//                i.putExtra("position", position);
+                startActivity(i);
             }
         });
 
@@ -60,9 +63,11 @@ public class MainActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent i = new Intent(MainActivity.this, DisplayQuestion.class);
-                i.putExtra("position", position);
-                startActivity(i);
+                  Intent i = new Intent(MainActivity.this, DisplayQuestion.class);
+                  i.putExtra("position", position);
+                  startActivity(i);
+
+
             }
         });
 
@@ -84,5 +89,6 @@ public class MainActivity extends AppCompatActivity {
         a3Edit.getText().clear();
         a4Edit.getText().clear();
     }
+
 
 }

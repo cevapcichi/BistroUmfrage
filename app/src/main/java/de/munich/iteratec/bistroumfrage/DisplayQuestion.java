@@ -41,13 +41,12 @@ public class DisplayQuestion extends AppCompatActivity implements View.OnClickLi
         setContentView(R.layout.activity_display_question);
 
 
-
         //set background to random color
         displayQuestion = (LinearLayout) findViewById(R.id.displayQuestion);
         setRandomBackgroundColor(displayQuestion);
 
 
-        //get int position that has been handed over to DisplayQuestion
+        //get int position of the ArrayList item (that has been clicked) that has been handed over to DisplayQuestion
         Intent i = getIntent();
         Bundle bundle = i.getExtras();
         int position = bundle.getInt("position");
@@ -125,19 +124,23 @@ public class DisplayQuestion extends AppCompatActivity implements View.OnClickLi
         switch (v.getId()){
             case R.id.answer1:
                 countAnswer1++;
-                mDatabase.child(answer1.getText().toString()).setValue(countAnswer1);
+                mDatabase.child("Antwort 1").child("Stimmen").setValue(countAnswer1);
+                mDatabase.child("Antwort 1").child("Emoji").setValue(answer1.getText().toString());
                 break;
             case R.id.answer2:
                 countAnswer2++;
-                mDatabase.child(answer2.getText().toString()).setValue(countAnswer2);
+                mDatabase.child("Antwort 2").child("Stimmen").setValue(countAnswer2);
+                mDatabase.child("Antwort 2").child("Emoji").setValue(answer2.getText().toString());
                 break;
             case R.id.answer3:
                 countAnswer3++;
-                mDatabase.child(answer3.getText().toString()).setValue(countAnswer3);
+                mDatabase.child("Antwort 3").child("Stimmen").setValue(countAnswer3);
+                mDatabase.child("Antwort 3").child("Emoji").setValue(answer3.getText().toString());
                 break;
             case R.id.answer4:
                 countAnswer4++;
-                mDatabase.child(answer4.getText().toString()).setValue(countAnswer4);
+                mDatabase.child("Antwort 4").child("Stimmen").setValue(countAnswer4);
+                mDatabase.child("Antwort 4").child("Emoji").setValue(answer4.getText().toString());
         }
     }
 

@@ -6,6 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <Button
+        android:id="@+id/toQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="16dp"
+        android:text="To Question" />
+
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/addFLoatingBtn"
         android:layout_width="wrap_content"
